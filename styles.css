@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+div,a {
+    background: #ccc;
+}
+
+/*DISPLAY [inline, block, none, inline-block, flex]  son los de uso comun
+
+pero hay mas por ejemplo: table, inline-table, table-row-group, table-footer-group
+table-row, table-column-group, table-column, table-cell, table-caption */
+a { 
+    display: inline-block;
+    background: #246eb9;
+    color: #f2f2f2;
+    padding: 20px;
+    /*display: none; desparece los enlaces, como si no hubieran estado ahi, los elimina de la pagina*/
+    /*visibility: hidden; oculta los enlaces o botones pero deja el espacio ahi*/
+}
+
+.caja {
+    color:black;
+    background: #4fb560;
+    margin: 20px 0;
+    width: 200px;
+    height: 200px;
+    overflow: auto; /*le agrega un scroll  en el lado derecho para visualizar el texto restante*/
+    /*overflow: hidden; /*el texto sobrante se oculta*/
+}
+
+.contenedor {
+    width: 600px;
+    background: #ccc;
+    margin: 20px 0;
+    overflow: hidden;
+
+}
+
+.izquierda {float: left;}
+.derecha {float: right;}
+
+.contenedor2 .caja {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+/*nota z-index es una propiedad que permite colocar oposicionar una caja frente a la otra
+perotambien permite especificar cual caja estara mas cerca o frente a las demas el valor que se
+le pone es en numero entero
+ */
+.azul {
+    background: #009ddc;
+    z-index: 10;
+
+}
+.gris {
+    background: #32021f;
+    left: 50px;
+    bottom: 80px;
+    z-index: 9;
+}
